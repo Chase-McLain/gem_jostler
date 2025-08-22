@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
-  <link rel="icon" href="">
+  <link rel="icon" href="jem.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -61,12 +61,12 @@
 
     <section class="row justify-content-evenly text-center">
 
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h4 id="click-counter"> Gems per Click: 1</h4>
       </div>
 
-      <div class="col-md-3">
-        <h4> Gems per Auto: 0</h4>
+      <div class="col-md-4">
+        <h4 id="auto-power"> Gems per Cycle: 0</h4>
       </div>
 
     </section>
@@ -89,17 +89,17 @@
         </button>
       </div>
       <div class="col-md-3">
-        <button class="btn btn-info">
-
-          Excavator Upgrade
-
+        <button onclick="buyExcavator()" class="btn btn-info">
+          <p id="excavator-price" class="m-0">
+            Excavator Upgrade: 1000
+          </p>
         </button>
       </div>
       <div class="col-md-3">
-        <button class="btn btn-info">
-
-          TNT Detonator
-
+        <button onclick="buyDetonator()" class="btn btn-info">
+          <p id="tnt-price" class="m-0">
+            TNT Detonator: 10000
+          </p>
         </button>
       </div>
     </section>
@@ -117,20 +117,12 @@
         <p id="drill-bonus"> Bonus: 0 </p>
       </div>
       <div class="col-md-3">
-        <p>
-          LvL: 0
-        </p>
-        <p>
-          Bonus: 0
-        </p>
+        <p id="excavator-level"> LvL: 0 </p>
+        <p id="excavator-bonus"> Bonus: 0 </p>
       </div>
       <div class="col-md-3">
-        <p>
-          LvL: 0
-        </p>
-        <p>
-          Bonus: 0
-        </p>
+        <p id="tnt-level"> LvL: 0 </p>
+        <p id="tnt-bonus"> Bonus: 0 </p>
       </div>
     </section>
 
@@ -138,7 +130,7 @@
 
     <section class="row text-center">
       <div class="col">
-        <h4 id="gem-counter">
+        <h4 id="gem-counter" onclick="manyGems()">
           Gems: 0
         </h4>
       </div>
