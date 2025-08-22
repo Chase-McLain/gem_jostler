@@ -62,7 +62,7 @@
     <section class="row justify-content-evenly text-center">
 
       <div class="col-md-3">
-        <h4> Gems per Click: 1</h4>
+        <h4 id="click-counter"> Gems per Click: 1</h4>
       </div>
 
       <div class="col-md-3">
@@ -75,25 +75,31 @@
 
     <section class="row text-center align-items-center pt-3">
       <div class="col-md-3 align-items-center">
-        <button class="btn btn-info">
-
-          Pickaxe Upgrade
-
+        <button onclick="buyPickaxe()" class="btn btn-info align-items-center">
+          <p id="pickaxe-price" class="m-0">
+            Pickaxe Upgrade: 10
+          </p>
+        </button>
+      </div>
+      <div class="col-md-3">
+        <button onclick="buyDrill()" class="btn btn-info">
+          <p id="drill-price" class="m-0">
+            Drill Upgrade: 100
+          </p>
         </button>
       </div>
       <div class="col-md-3">
         <button class="btn btn-info">
-          Drill Upgrade
-        </button>
-      </div>
-      <div class="col-md-3">
-        <button class="btn btn-info">
+
           Excavator Upgrade
+
         </button>
       </div>
       <div class="col-md-3">
         <button class="btn btn-info">
+
           TNT Detonator
+
         </button>
       </div>
     </section>
@@ -103,20 +109,12 @@
 
     <section class="row pt-3 text-center">
       <div class="col-md-3">
-        <p>
-          LvL: 0
-        </p>
-        <p>
-          Bonus: 0
-        </p>
+        <p id="pickaxe-level">LvL: 0</p>
+        <p id="pickaxe-bonus"> Bonus: 0</p>
       </div>
       <div class="col-md-3">
-        <p>
-          LvL: 0
-        </p>
-        <p>
-          Bonus: 0
-        </p>
+        <p id="drill-level"> LvL: 0 </p>
+        <p id="drill-bonus"> Bonus: 0 </p>
       </div>
       <div class="col-md-3">
         <p>
