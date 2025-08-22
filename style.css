@@ -1,0 +1,45 @@
+body {
+  /* background-color: blanchedalmond; */
+  background-image: url(https://www.worldanvil.com/uploads/images/c3e8c173c5ae9ea339747858422f486f.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+
+header {
+  -webkit-text-fill-color: red;
+  font-family: "Rubik Dirt", system-ui;
+}
+
+footer {
+  background-image: url(https://art.ngfiles.com/images/2774000/2774183_gamesmashdash_pixel-art-crystal-gems-redesign-freedom-planet-2.png?f1665349843);
+  -webkit-text-fill-color: rgb(170, 255, 0);
+  text-shadow: 3px 3px 3px red;
+}
+
+img {
+
+  user-select: none;
+  cursor: grab;
+  display: inline-block;
+  transition: all .1s ease;
+}
+
+img:active {
+  cursor: grabbing;
+  transform: scale(1.1);
+}
+
+button {
+  user-select: none;
+  cursor: grab;
+  display: inline-block;
+  transition: all .1s ease;
+}
+
+button:active {
+  cursor: grabbing;
+  transform: scale(1.03);
+}
