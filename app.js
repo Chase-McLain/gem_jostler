@@ -186,6 +186,7 @@ setInterval(tntCollect, 1000 * 3)
 
 function manyGems() {
   totalGems += 100000
+  gemDisplay()
 }
 
 

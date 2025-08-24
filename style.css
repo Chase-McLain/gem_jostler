@@ -16,7 +16,7 @@ header {
 footer {
   background-image: url(https://art.ngfiles.com/images/2774000/2774183_gamesmashdash_pixel-art-crystal-gems-redesign-freedom-planet-2.png?f1665349843);
   -webkit-text-fill-color: rgb(170, 255, 0);
-  text-shadow: 3px 3px 3px red;
+  text-shadow: 1px 3px 3px red;
 }
 
 img {
